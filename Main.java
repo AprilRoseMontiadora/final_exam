@@ -1,13 +1,20 @@
-public class Main {
-	public static void main(String[] args) {
-		Customer customer;
-		RegularCustomer regularCustomer = new RegularCustomer("April", 1000);
-		SeniorCustomer seniorCustomer = new SeniorCustomer("Rose", 1000);
+import java.util.*;
 
-		customer = regularCustomer;
-		System.out.println(customer.getName()+" " +customer.calculateBill());
+public class Main
+{
+	public static void main(String[] args)
+	{
+		System.out.println("Hello World!");
 
-		customer = seniorCustomer;
-		System.out.println(customer.getName()+" "+customer.calculateBill());
+		Scanner input = new Scanner(System.in);
+
+		System.out.print("Enter a number: ");
+		double number1 = input.nextDouble();
+
+		System.out.print("Enter second number: ");
+		double number2 = input.nextDouble();
+
+		double product = number1 * number2;
+		System.out.printf("The product of both numbers is: %f", product);
 	}
 }
